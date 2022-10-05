@@ -1,12 +1,13 @@
-##TIC-TAC_TOE very known and entertaing game. Which has been played by almost everyone.
+## TIC-TAC_TOE 
+very known and entertaing game. Which has been played by almost everyone.
 
 Here i tried to build the same game wih the help of React js. You can take a look on the same through https://tictactoe-withreact.netlify.app/ Link.
 
 
-#Preview is here:
+## Preview is here:
 
 ![](src/Screenshot%20(111).png)
-[](src/video2854375966.mp4)
+[![Watch the video](src/video2854375966.mp4)
 
 
  # Getting Started with Create React App
