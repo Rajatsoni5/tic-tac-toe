@@ -7,7 +7,7 @@ Here i tried to build the same game wih the help of React js. You can take a loo
 ## Preview is here:
 
 ![](src/Screenshot%20(111).png)
-![Watch the video](src/video2854375966.mp4)
+![](src/Screenshot%20(112).png)
 
 
  # Getting Started with Create React App
