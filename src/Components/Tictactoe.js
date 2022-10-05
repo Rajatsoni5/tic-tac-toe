@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import "./Tictactoe.module.css";
+import icon from "../icon.png";
 
 function Tictactoe() {
 
@@ -75,8 +76,11 @@ const checkWin=(board)=>{
 }
 
   return (
-    <>
-      <h1 className="text-center">Tic tac toe</h1>
+      <>
+      <div className="head">
+        <img src={icon} alt="Icon" />
+        <h1 className="text-center">Tic tac toe</h1>
+      </div>
       <table>
         <tbody>
           <tr>
