@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import "./Tictactoe.module.css";
 
 function Tictactoe() {
   return (
