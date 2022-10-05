@@ -77,10 +77,12 @@ const checkWin=(board)=>{
 
   return (
       <>
-      <div className="head">
+   
+        
+        <h1>
         <img src={icon} alt="Icon" />
-        <h1 className="text-center">Tic tac toe</h1>
-      </div>
+        Tic tac toe</h1>
+
       <table>
         <tbody>
           <tr>
