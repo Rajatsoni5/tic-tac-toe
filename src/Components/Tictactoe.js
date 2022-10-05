@@ -9,7 +9,7 @@ const [move, setMove] = useState("X")
 const click = (n) => {
   
   let square = [...board]
-  if(board[n] !== " "){
+  if(board[n] !== ""){
     alert("Sorry! Choose another position.")
     return
   }
@@ -22,10 +22,58 @@ const click = (n) => {
     setMove("X")
   }
 
-  const win = () => {
-    
-  }
+  if(checkWin(square)){
+    alert("Winner")
+    square.fill('');
+    setBoard(square)
+}  
+if(checkDraw(square)){
+    alert("Match Draw")
+    square.fill('');
+    setBoard(square)
+}  
+
 }
+
+const checkDraw=(board)=>{
+let count=0;
+board.forEach(element => {
+    if(element!==''){
+        count++;
+    }
+});
+
+if(count>=9){
+    return true;
+}else{
+    return false;
+}
+}
+
+
+const checkWin=(board)=>{
+    const conditions=[
+        [0,1,2],
+        [3,4,5],
+        [6,7,8],
+        [0,3,6],
+        [1,4,7],
+        [2,5,8],
+        [0,4,8],
+        [2,4,6]
+    ]
+
+    let flag=false;
+    conditions.forEach(element => {
+        if(board[element[0]]!=='' && board[element[1]]!=='' && board[element[2]]!==''){ 
+        if(board[element[0]]===board[element[1]] && board[element[1]]===board[element[2]]){
+            flag=true;
+        }
+    }
+    });
+    return flag;
+}
+
   return (
     <>
       <h1 className="text-center">Tic tac toe</h1>
